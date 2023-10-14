@@ -52,7 +52,7 @@ def singleNonDuplicatesOptimum(nums):
 
 nums = [1,1,2,3,3,4,4,8,8]
 print(singleNonDuplicate(nums))
-print(singleNonDuplicatesOptimum(nums))
+
 nums1 = [3,3,7,7,10,11,11]
 print(singleNonDuplicate(nums1))
 print(singleNonDuplicatesOptimum(nums1))
