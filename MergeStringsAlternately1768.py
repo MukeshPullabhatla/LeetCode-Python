@@ -11,4 +11,7 @@ def mergeAlternately(word1, word2) -> str:
 
 word1 = "abc"
 word2 = "pqr"
+word3 = "ab"
+word4 = "pqrs"
 print(mergeAlternately(word1, word2))
+print(mergeAlternately(word3, word4))
