@@ -11,6 +11,8 @@ def reverse1(x):
     res = 0
     while x>0:
         digit = x % 10
+        if res > (pow(2, 31)-1) / 10:
+            return 0
         res = res * 10 + digit
         x //= 10
     return res * flag
