@@ -4,8 +4,8 @@ class ListNode:
         self.next = next
 def add_two_numbers(l1, l2):
     # Initialize the dummy head of the result list and a carry variable
-    dummy_head = ListNode(0)
-    current = dummy_head
+    head = ListNode(0)
+    current = head
     carry = 0
 
     while l1 or l2:
@@ -31,7 +31,7 @@ def add_two_numbers(l1, l2):
     if carry > 0:
         current.next = ListNode(carry)
 
-    return dummy_head.next
+    return head.next
 
 # Example usage:
 # Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
