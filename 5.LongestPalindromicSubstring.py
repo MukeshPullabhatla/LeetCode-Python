@@ -13,7 +13,22 @@ def longestPalindrome(s:str)->str:
                 return s[start:start+length]
     return ""
 
+# Brute Force Approach O(n2)
+def longestPalindrome1(s: str)->str:
+    if len(s) <= 1:
+        return s
+    length = 1
+    string = s[0]
+    for i in range(len(s)-1):
+        for j in range(i+1, len(s)):
+            if j-i+1>length and s[i:j+1] == s[i:j+1][::-1]:
+                length = j-i+1
+                string = s[i:j+1]
+    return string
+
 s = "babad"
 s1 = "cbbd"
 print(longestPalindrome(s))
 print(longestPalindrome(s1))
+print(longestPalindrome1(s))
+print(longestPalindrome1(s1))
