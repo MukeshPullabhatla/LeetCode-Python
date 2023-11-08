@@ -7,9 +7,9 @@ def findClosestElements(arr: List[int], k: int, x: int) -> List[int]:
         result.append(sorted_arr[i])
     return sorted(result)
 
-arr = [1,2,3,4,5]
+arr = [1,2,3,4,5,6,7,8,9,10]
 k = 4
-x = 3
+x = 5
 print(findClosestElements(arr, k, x))
 
 # Using binary search
